@@ -1,0 +1,44 @@
+package com.callor.system;
+
+public class VarCB {
+
+	public static void main(String[] args) {
+		
+			int intNum1 = 30;
+			float floatNum1 = 25.0f;
+	
+			//intNum1 변수에 정수 20을 더하여
+			//다른 변수에 보관하고자 한다
+			//이때 결과르 보관한 변수 intResult 를 선언하고
+			// 결과를 intResult 에 보관한다
+			int intResult = 0;
+			intResult = intNum1 + 20;
+			/*
+			 * 이 경우 위에서 floatNum1 변수를 선언하엿는데
+			 * 사용할일이 없다
+			 * 그래서 결과를  floatNum1에 저장한다
+			 * floatNum1에 결과가 저장이 되더라도 원래 결과와 저징된 변수의 type이 달라서
+			 * 코드가 실행되는 과정에서 문제가 발생할수 있다
+			 * 때문에 결과에 정확히 일치한 type의 변수에 결과를 보관하는 것이 좋다
+			 * 
+			 floatNum1 = intnum1 +20;
+			 * 
+			 * intNum1 % 2의 결과는 정수형이다
+			 * 값은 중요하지 않다
+			 * 대부분에 반드시 결과를 저장할 변수의 type의 변수에 저장해야 한다.
+			 /* 
+			boolean bYes = intNum1 % 2 ==0;
+			/*
+			 * 
+			 */
+		
+			/*
+			boolean bYes = intNum1 % 2 ==0;
+			/*
+			*숫자 <-> boolean 간에는 변환을 할 수 없다
+			*/
+			//intYes1 = intNum1 % 2 == 0;
+			//bYes = intNum1 % 2;
+
+
+}
